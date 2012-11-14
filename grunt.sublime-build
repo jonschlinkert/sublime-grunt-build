@@ -1,13 +1,21 @@
 {
-  "cmd": ["grunt.cmd"],
+  "cmd": ["grunt", "--no-color"],
   "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
   "working_dir": "${project_path:${folder:${file_path}}}",
   "selector": "grunt.js",
+  "windows":
+  {
+    "cmd": ["grunt.cmd", "--no-color"]
+  },
   "variants":
   [
     {
       "name": "Grunt",
-      "cmd": ["grunt.cmd"]
+      "cmd": ["grunt", "--no-color"],
+      "windows":
+      {
+        "cmd": ["grunt.cmd", "--no-color"]
+      }
     }
   ]
 }
