@@ -51,6 +51,13 @@ The build-on-save feature was added in v1.1.  To enable build-on-save, add the `
 }
 ```
 
-_A word of caution_: Running a `Grunt` build every time you save/`ctrl+s` is a great productivity booster _when used wisely_. Make sure you use this feature with faster, more compact builds. If you have lots of tasks and heavy build system that takes more than a few seconds to run, this feature might get annoying pretty fast.
+### Settings
+
+To build on save, keep the value at `1`. To disable build on save, change the value to `0`.
+
+
+### A build-on-save word of caution
+
+Running a `Grunt` build every time you save/`ctrl+s` is a great productivity booster _when used wisely_. Make sure you use this feature with faster, more compact builds. If you have lots of tasks and heavy build system that takes more than a few seconds to run, this feature might get annoying pretty fast.
 
 A suggestion is to set your `default` to include only the tasks that you need to run every time you save (such as compiling LESS to CSS), and run your heavier copy/compress tasks manually as necessary.
