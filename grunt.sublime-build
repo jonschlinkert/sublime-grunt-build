@@ -1,13 +1,13 @@
 {
-  "cmd": ["grunt.cmd"],
+  "cmd": ["grunt"],
   "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
   "working_dir": "${project_path:${folder:${file_path}}}",
-  "selector": "grunt.js",
+  "selector": "Gruntfile.js",
   "variants":
   [
     {
-      "name": "Grunt",
-      "cmd": ["grunt.cmd"]
+      "name": "Grunt Build",
+      "cmd": ["grunt"]
     }
   ]
 }
