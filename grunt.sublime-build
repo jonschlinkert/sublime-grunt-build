@@ -5,7 +5,7 @@
   "selector": "Gruntfile.js",
   "windows":
   {
-    "cmd": ["grunt", "--no-color"]
+    "cmd": ["grunt.cmd", "--no-color"]
   },
   "variants":
   [
@@ -14,7 +14,7 @@
       "cmd": ["grunt", "--no-color"],
       "windows":
       {
-        "cmd": ["grunt", "--no-color"]
+        "cmd": ["grunt.cmd", "--no-color"]
       }
     }
   ]
