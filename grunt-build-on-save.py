@@ -9,7 +9,11 @@ class BuildGruntOnSave(sublime_plugin.EventListener):
 
     #let's see if project wants to be autobuilt.
     should_build = view.settings().get('build_on_save')
+
     if should_build == 1:
-      view.window().run_command('exec',{'cmd':['grunt'],'working_dir':folder})
+      if sublime.platform() == 'windows':
+        view.window().run_command('exec',{'cmd':['grunt.cmd', "--no-color"],'working_dir':folder})
+      else:
+        view.window().run_command('exec',{'cmd':['grunt', "--no-color"],'working_dir':folder})
     else:
       print 'BuildGruntOnSave: Project not configured for build_on_save.  Try setting build_on_save in project settings'
