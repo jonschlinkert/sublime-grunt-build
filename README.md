@@ -36,7 +36,7 @@ git clone git://github.com/jonschlinkert/sublime-grunt-build.git
 ```
 
 
-## Grunfile
+## Gruntfile
 Add a Gruntfile to in your project root.
 
 
